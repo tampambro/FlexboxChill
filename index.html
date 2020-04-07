@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Chill whith FlexBox" />
+
+	<link href="http://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" text="text/css" />
+	<link rel="stylesheet" href="style_for_index.css" type="text/css" />
+	<link rel="SHORTCUT ICON" href="img/favicon.ico" />
+
+	<title>Flexbox chill</title>
+
+</head>
+<body>
+	<div class="Center">
+		Chilling with FLAXbox!
+	</div>
+
+	<nav>
+		<a href="#Home" class="ListItem">Home</a>
+
+		<a href="#" id="Home">
+			<div class="Ha">
+				You are at home already =)
+			</div>
+		</a>
+
+		<a href="shadow_bros.html" class="ListItem">About Us</a>
+		<a href="stuff.html" class="ListItem">Products</a>
+		<a href="anime_stuff.html" class="ListItem">Policy</a>
+		<a href="https://www.youtube.com/watch?v=YKSp3bRYEkg" class="ListCenter" target="_blank">Chill</a>
+		<a href="#blackoutForContact" class="LastItem" onclick="contactInAndOut()"> Contact</a>
+
+		<div id="blackoutForContact" onclick="contactInAndOut()" style="display: flex; z-index: -1;"></div>
+		<div id="contact" style="top: -200%;">
+			<a href="https://github.com/tampambro">Github</a>
+			<a href="mailto:tampambro999@gmail.com?subject=For Tampambro">Email</a>
+		</div>
+	</nav>
+
+	<main>
+		<div class="special">
+			<p>May be you wanna some <a href="https://soundcloud.com/socialunit_tampambro/sets/instrumental-tracks" class="InlineFlexForSpecial" target="_blank">special chill?</a></p>
+		</div>
+
+		<div class="UselessButtens">
+			<div class="Button"><a class="Button" href="#blackoutForClick">Wanna click here?</a></div>
+
+			<div id="blackoutForClick">
+				<div id="click">
+					<a href="#" class="close">ok</a>
+				</div>
+			</div>
+
+			<div class="Button"><a class="Button" href="index_for_color_party.html">What about this?</a></div>
+			<div class="Button"><a class="Button" href="japanese_cat_food_ad.html">One more time.</a></div>
+		</div>
+
+		<div class="ChillImgWrapper">
+			<div class="FirstImg"><a href="https://www.youtube.com/watch?v=vqUuH2ka-xk" target="_blank"><img src="https://rocker-store.com/upload/content/0/2/90/47/27049_478_1.jpg" alt="Bob Marl" width="100%" height="100%" /></a></div>
+			<div class="SecondImg"><a href="https://www.youtube.com/watch?v=iai7_F5nZyQ" target="_blank"><img src="https://lastfm.freetls.fastly.net/i/u/ar0/7c51f9d003e74db7be91bd2948542025.jpg" alt="Agitation Free" width="100%" /></a></div>
+			<div class="ThirdImg"><a href="https://www.youtube.com/watch?v=VjGwEdZekH8" target="_blank"><img src="https://img.discogs.com/Gd9Zrxn5xy1cAqfZgzak1Dr3tXo=/600x640/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-1571392-1346063989-5898.jpeg.jpg" alt="Panda Dub" width="100%" height="100%" /></a></div>
+		</div>
+	</main>
+
+	<div class="wrapper">
+		<footer>
+			Tampambro
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

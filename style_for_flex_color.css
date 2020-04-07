@@ -1,0 +1,338 @@
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/oswald/v31/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUZiZQ.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
+}
+
+html,
+body {
+	font-family: "Oswald", sans-serif;
+
+	margin: 0;
+	padding: 0;
+}
+
+.ColorWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.FlexColor {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	min-height: 6.25rem;
+	padding: 1rem;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.Header {
+	-webkit-animation: Pinkie-Pie 1s infinite;
+	animation: Pinkie-Pie 1s infinite;
+
+	background-color: #ee72eeff;
+
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 1;
+	order: 1;
+}
+
+.Content {
+	-webkit-animation: For-Party 1.5s infinite;
+	animation: For-Party 1.5s infinite;
+
+	background-color: #ff0f;
+
+	-webkit-box-ordinal-group: 3;
+	-ms-flex-order: 2;
+	order: 2;
+}
+
+.One {
+	-webkit-animation: For-Fun 0.5s infinite;
+	animation: For-Fun 0.5s infinite;
+
+	background-color: #2743d7ff;
+
+	-webkit-box-ordinal-group: 4;
+	-ms-flex-order: 3;
+	order: 3;
+}
+
+.Two {
+	-webkit-animation: For-Happy 0.2s infinite;
+	animation: For-Happy 0.2s infinite;
+
+	background-color: #df6e1fff;
+
+	-webkit-box-ordinal-group: 5;
+	-ms-flex-order: 4;
+	order: 4;
+}
+
+.Footer {
+	-webkit-animation: For-Loneliness 4s infinite;
+	animation: For-Loneliness 4s infinite;
+
+	color: white;
+	background-color: black;
+
+	-webkit-box-ordinal-group: 6;
+	-ms-flex-order: 5;
+	order: 5;
+}
+
+@media (min-width: 500px) {
+	.ColorWrapper {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+	}
+
+	.Header {
+		width: 100%;
+	}
+
+	.Content {
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		-webkit-box-ordinal-group: 4;
+		-ms-flex-order: 3;
+		order: 3;
+	}
+
+	.One {
+		width: 150px;
+
+		-webkit-box-ordinal-group: 3;
+		-ms-flex-order: 2;
+		order: 2;
+	}
+
+	.Two {
+		width: 150px;
+
+		-webkit-box-ordinal-group: 5;
+		-ms-flex-order: 4;
+		order: 4;
+	}
+
+	.Footer {
+		width: 100%;
+	}
+
+	.backArrow {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		width: 0;
+		height: 0;
+		margin-top: 1rem;
+		margin-right: 40%;
+
+		border-top: 100px solid transparent;
+		border-right: 400px solid indigo;
+		border-bottom: 100px solid transparent;
+
+		-ms-flex-line-pack: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-ordinal-group: 7;
+		-ms-flex-order: 6;
+		order: 6;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+
+		-webkit-animation: For-backArrow 5s infinite;
+
+		animation: For-backArrow 5s infinite;
+	}
+
+	.backArrow a {
+		font-size: 2rem;
+
+		position: absolute;
+		right: 45%;
+
+		text-decoration: none;
+
+		color: #ebebeb;
+	}
+}
+
+@-webkit-keyframes Pinkie-Pie {
+	0% {
+		background-color: #ee72eeff;
+	}
+
+	50% {
+		background-color: #ff003aff;
+	}
+
+	100% {
+		background-color: #ee72eeff;
+	}
+}
+
+@keyframes Pinkie-Pie {
+	0% {
+		background-color: #ee72eeff;
+	}
+
+	50% {
+		background-color: #ff003aff;
+	}
+
+	100% {
+		background-color: #ee72eeff;
+	}
+}
+
+@-webkit-keyframes For-Fun {
+	0% {
+		background-color: #2743d7ff;
+	}
+
+	50% {
+		background-color: #ffce00ff;
+	}
+
+	100% {
+		background-color: #2743d7ff;
+	}
+}
+
+@keyframes For-Fun {
+	0% {
+		background-color: #2743d7ff;
+	}
+
+	50% {
+		background-color: #ffce00ff;
+	}
+
+	100% {
+		background-color: #2743d7ff;
+	}
+}
+
+@keyframes For-Party {
+	0% {
+		background-color: #ff0f;
+	}
+
+	50% {
+		background-color: #b0ff;
+	}
+
+	100% {
+		background-color: #ff0f;
+	}
+}
+
+@-webkit-keyframes For-Happy {
+	0% {
+		background-color: #df6e1fff;
+	}
+
+	50% {
+		background-color: #00a0ffff;
+	}
+
+	100% {
+		background-color: #df6e1fff;
+	}
+}
+
+@keyframes For-Happy {
+	0% {
+		background-color: #df6e1fff;
+	}
+
+	50% {
+		background-color: #00a0ffff;
+	}
+
+	100% {
+		background-color: #df6e1fff;
+	}
+}
+
+@-webkit-keyframes For-Loneliness {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+@keyframes For-Loneliness {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+@-webkit-keyframes For-backArrow {
+	0% {
+		border-right: #ebebeb;
+	}
+
+	50% {
+		border-right: indigo;
+	}
+
+	100% {
+		border-right: #ebebeb;
+	}
+}
+
+@keyframes For-backArrow {
+	0% {
+		border-right: 400px solid #ebebeb;
+	}
+
+	50% {
+		border-right: 400px solid indigo;
+	}
+
+	100% {
+		border-right: 400px solid #ebebeb;
+	}
+}

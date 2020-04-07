@@ -1,0 +1,200 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 0 2rem;
+
+	background-color: #ebebeb;
+}
+
+body {
+	font-family: robotoregular;
+}
+
+@font-face {
+	font-family: "robotoregular";
+	font-weight: normal;
+	font-style: normal;
+
+	src: url("fonts/Roboto-Regular-webfont.eot");
+	src: url("fonts/Roboto-Regular-webfont.eot?#iefix")
+			format("embedded-opentype"),
+		url("fonts/Roboto-Regular-webfont.woff") format("woff"),
+		url("fonts/Roboto-Regular-webfont.ttf") format("truetype"),
+		url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+}
+
+@media (min-width: 45rem) {
+	html,
+	body {
+		max-width: 50rem;
+	}
+}
+
+@media (min-width: 55rem) {
+	html,
+	body {
+		max-width: 79rem;
+	}
+}
+
+@media (min-width: 87.5rem) {
+	html,
+	body {
+		font-size: 1.1vw;
+
+		max-width: 100rem;
+	}
+}
+
+@media (max-width: 33.75rem) {
+	.ScrollWrapper {
+		flex-direction: column;
+	}
+
+	.Item {
+		padding-left: 35%;
+	}
+}
+
+h1,
+h2,
+p {
+	padding: 0 1rem;
+
+	text-align: center;
+}
+
+.ScrollWrapper {
+	display: flex;
+
+	counter-reset: count-the-anime;
+
+	flex: 1 0 100%;
+	flex-wrap: wrap;
+}
+
+.ScrollWrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.Item {
+	font-size: 1rem;
+
+	position: relative;
+
+	display: flex;
+
+	width: 50%;
+	height: 10rem;
+	margin: 1rem 0;
+
+	counter-increment: count-the-anime;
+
+	border-bottom: 3px solid #bbb;
+	background-color: #ebebeb;
+}
+
+@media (min-width: 33.76rem) {
+	.Item:nth-child(2n + 1):nth-last-child(-n + 2),
+	.Item:nth-child(2n + 1):nth-last-child(-n + 2) ~ .Item {
+		border-bottom: 0;
+	}
+}
+
+@media (min-width: 45rem) {
+	.Item {
+		width: 33.3333333333%;
+	}
+
+	.Item:nth-child(3n + 1):nth-last-child(-n + 3),
+	.Item:nth-child(3n + 1):nth-last-child(-n + 3) ~ .Item {
+		border-bottom: 0;
+	}
+}
+
+@media (min-width: 55rem) {
+	.Item {
+		width: 25%;
+	}
+
+	.Item:nth-child(4n + 1):nth-last-child(-n + 4),
+	.Item:nth-child(4n + 1):nth-last-child(-n + 4) ~ .Item {
+		border-bottom: 0;
+	}
+}
+
+.Item::before {
+	font-size: 1rem;
+	line-height: 1rem;
+
+	position: absolute;
+	top: 0;
+	left: -2rem;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	width: 1.5rem;
+	height: 1.5rem;
+
+	content: counter(count-the-anime);
+
+	border: 1.5px solid #999;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #ccc;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.Item img {
+	max-height: 9rem;
+}
+
+.Caption {
+	font-size: 1rem;
+	line-height: 1.2rem;
+
+	max-width: 4rem;
+	padding-left: 0.5rem;
+}
+
+@keyframes warning-animation {
+	0% {
+		color: #ebebeb;
+	}
+
+	50% {
+		color: red;
+	}
+
+	0% {
+		color: #ebebeb;
+	}
+}
+
+h2 {
+	animation: warning-animation 3s infinite;
+
+	color: #ebebeb;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+details {
+	height: 200px;
+}
